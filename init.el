@@ -13,16 +13,8 @@
 
 ;; set font
 (set-default-font "Noto Mono-12")
-;;(set-default-font "Tlwg Typist-18")
 
 ;;------------------------- UI -------------------------;;
-;; set window size
-(setq default-frame-alist
-	  '((height . 36)
-		(width . 78)))
-
-;; startup with full screen
-;(setq initial-frame-alist (quote ((fullscreen . maximized))))
 
 ;; cursor style
 (setq-default cursor-type 'bar)
@@ -36,34 +28,12 @@
 ;; paren match
 (show-paren-mode t)
 
-;; mouse avoidance
-;;(mouse-avoidance-mode 'animate)
-
-;; close scroll bar nil
-(scroll-bar-mode -1)
-(menu-bar-mode   -1) ; F10 can open
-(tool-bar-mode   -1)
-
 ;; highlight current line
 ;(global-hl-line-mode t)
 
 ;; show time
-;;(display-time-mode 1)
-;;(setq display-time-24hr-format t)
-
-;; scatch message
-(setq initial-scratch-message
-	  ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Welcome to use GogEmacs config... ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;                 (__)              ;;
-;;                 (oo)              ;;
-;;           /------/                ;; 
-;;          / |    ||                ;;  
-;;        *  /---/                   ;;
-;;            ~~   ~~                ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-")
+(display-time-mode 1)
+(setq display-time-24hr-format t)
 
 ;;------------------------- END -------------------------;;
 
